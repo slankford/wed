@@ -1,0 +1,145 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Inter', 'Georgia', serif;
+  background: #faf9f7;
+  color: #333;
+  line-height: 1.7;
+  text-align: left;
+  padding: 0 0.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  color: #7a5c58;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #2c2c2c;
+}
+
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.3rem;
+}
+
+
+p, li {
+  font-size: 1.05rem;
+  margin: 0.5rem 0;
+  text-align: left;
+}
+
+/* Hero Section */
+
+.hero {
+  padding: 2rem 2rem 1rem 2rem;
+  background: linear-gradient(135deg, #fdf6f0, #fefefe);
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+
+.hero h2 {
+  font-size: 2rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+
+.hero-img {
+  width: 180px;
+  height: auto;
+  border-radius: 50%;
+  margin: 1.2rem 0 1.2rem 0;
+  display: block;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+
+.date {
+  font-size: 1.2rem;
+  color: #7a5c58;
+  font-family: 'Playfair Display', serif;
+  margin-top: 0.5rem;
+}
+
+/* Section Styling */
+
+section {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1.5rem 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  text-align: left;
+  border: 1px solid #f2e9e1;
+}
+
+
+ul {
+  list-style: none;
+  margin-top: 1rem;
+  padding-left: 0;
+}
+
+
+.hotel {
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #f9f6f3;
+  border: 1px solid #f2e9e1;
+}
+
+/* RSVP Button */
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  background: #7a5c58;
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background 0.3s ease;
+  font-family: 'Playfair Display', serif;
+}
+
+.btn:hover {
+  background: #5c423f;
+}
+
+/* Footer */
+
+footer {
+  margin: 2rem 0;
+  font-size: 0.9rem;
+  color: #777;
+  text-align: left;
+  border-top: 1px solid #f2e9e1;
+  padding-top: 1rem;
+}
