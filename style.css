@@ -121,6 +121,15 @@ p, li {
   z-index: 3;
 }
 
+@media (max-width: 600px) {
+  .hero-name {
+    display: block;
+    text-align: center;
+  }
+  .hero h2 {
+    text-align: center;
+  }
+}
 
 .hero h2 {
   font-size: 2rem;
