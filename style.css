@@ -16,12 +16,11 @@ body {
   margin: 0 auto;
 }
 
-
 h1 {
   font-family: 'Great Vibes', cursive;
   font-size: 2.5rem;
   color: #fff;
-  margin-top: 1.5rem;
+  margin-top: 0rem;
   margin-bottom: 0.5rem;
   letter-spacing: 1px;
   background: linear-gradient(90deg, #eecda3 0%, #cf5b63 100%);
@@ -35,10 +34,9 @@ h2, h3 {
   /* color: #2c2c2c; */
 }
 
-
 h2 {
   font-size: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 0rem;
   margin-bottom: 0.5rem;
   color: #cf5b63;
   position: relative;
@@ -52,11 +50,11 @@ section > h2::after {
   border-radius: 2px;
   margin: 0.4rem 0 0.8rem 0;
 }
-}
+
 h3 {
   font-size: 1.15rem;
   margin-bottom: 0.3rem;
-  color: #eecda3;
+  color: #5f4b4b;
   font-weight: 600;
 }
 
@@ -68,15 +66,59 @@ p, li {
   margin-left: 1rem;
 }
 
-/* Hero Section */
+/* Decorative Header Image Styling */
+.header-image-wrapper {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: -1.5rem;
+    background: linear-gradient(to bottom, #fff8f3 90%, rgba(255,248,243,0) 100%);
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 2;
+}
+@media (max-width: 600px) {
+  .header-image-wrapper {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    left: auto;
+    right: auto;
+    position: static;
+  }
+  .header-image {
+    width: 100%;
+    max-width: 100%;
+  }
+}
 
+.header-image {
+  width: 100%;
+    max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  box-shadow: 0 12px 36px 0 rgba(180, 140, 120, 0.18), 0 2px 0 #eecda3;
+  background: none;
+  position: relative;
+  z-index: 2;
+}
+
+/* Hero Section */
 .hero {
-  padding: 2rem 2rem 1rem 2rem;
+  padding: 2.5rem 2rem 1rem 2rem;
+  margin-top: -1.5rem;
   background: linear-gradient(135deg, #fdf6f0, #fefefe);
-  border-radius: 16px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  border-radius: 0px 0px 22px 22px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
   margin-bottom: 1.5rem;
   text-align: center;
+  position: relative;
+  z-index: 3;
 }
 
 
