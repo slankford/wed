@@ -163,9 +163,8 @@ p, li {
 }
 
 @media (max-width: 600px) {
-  .hero-name {
+  .no-line-break {
     display: block;
-    text-align: center;
   }
   .hero h2 {
     text-align: center;
