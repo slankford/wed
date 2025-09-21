@@ -21,7 +21,11 @@
     <h1>The Wedding of</h1>
     <h2><span class="no-line-break">Julianna Baum</span> & <span class="no-line-break">Silas Lankford</span></h2>
     <h3 class="date">November 22nd, 2025</h3>
+
   </header>
+
+  <!-- Countdown Timer -->
+  <div id="countdown" class="countdown-timer"></div>
 
   <center><a href="#RSVP" class="rsvp-link">Please RSVP by October 17th <span class="rsvp-arrow">→</span></a></center>
   <!-- Schedule -->
@@ -96,5 +100,26 @@
   <footer>
     <p>Made with ❤️ by Julianna & Silas</p>
   </footer>
+  <script>
+    // Countdown Timer Script
+    function updateCountdown() {
+      const eventDate = new Date('2025-11-22T00:00:00');
+      const now = new Date();
+      let diff = eventDate - now;
+      if (diff < 0) diff = 0;
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / (1000 * 60)) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+      document.getElementById('countdown').innerHTML =
+        `<span class="countdown-label">Countdown:</span><br> ` +
+        `<span class="countdown-num">${days}</span> days ` +
+        `<span class="countdown-num">${hours}</span> hours ` +
+        `<span class="countdown-num">${minutes}</span> min ` +
+        `<span class="countdown-num">${seconds}</span> sec`;
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
 </body>
 </html>
