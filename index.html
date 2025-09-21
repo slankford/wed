@@ -25,7 +25,13 @@
   </header>
 
   <!-- Countdown Timer -->
-  <div id="countdown" class="countdown-timer"></div>
+  <div id="countdown" class="countdown-timer">
+    <span class="countdown-label">Countdown to Wedding Day:</span><br>
+    <span id="countdown-days" class="countdown-num">0</span> days
+    <span id="countdown-hours" class="countdown-num">0</span> hours
+    <span id="countdown-minutes" class="countdown-num">0</span> min
+    <span id="countdown-seconds" class="countdown-num">0</span> sec
+  </div>
 
   <center><a href="#RSVP" class="rsvp-link">Please RSVP by October 17th <span class="rsvp-arrow">→</span></a></center>
   <!-- Schedule -->
@@ -101,7 +107,7 @@
     <p>Made with ❤️ by Julianna & Silas</p>
   </footer>
   <script>
-    // Countdown Timer Script
+    // Countdown Timer Script (copy-paste friendly)
     function updateCountdown() {
       const eventDate = new Date('2025-11-22T00:00:00');
       const now = new Date();
@@ -111,12 +117,10 @@
       const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
       const minutes = Math.floor((diff / (1000 * 60)) % 60);
       const seconds = Math.floor((diff / 1000) % 60);
-      document.getElementById('countdown').innerHTML =
-        `<span class="countdown-label">Countdown:</span><br> ` +
-        `<span class="countdown-num">${days}</span> days ` +
-        `<span class="countdown-num">${hours}</span> hours ` +
-        `<span class="countdown-num">${minutes}</span> min ` +
-        `<span class="countdown-num">${seconds}</span> sec`;
+      document.getElementById('countdown-days').textContent = days;
+      document.getElementById('countdown-hours').textContent = hours;
+      document.getElementById('countdown-minutes').textContent = minutes;
+      document.getElementById('countdown-seconds').textContent = seconds;
     }
     updateCountdown();
     setInterval(updateCountdown, 1000);
