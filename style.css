@@ -10,12 +10,12 @@
 }
 .tab-btn {
   font-family: 'Playfair Display', serif;
-  font-size: 1.13rem;
+  font-size: 1.15rem;
   background: #f7ede7;
   color: #cf5b63;
   border: 2px solid #eecda3;
   border-radius: 12px;
-  padding: 0.7em 2.2em;
+  padding: 0.7rem 1.8rem;
   cursor: pointer;
   box-shadow: 0 2px 8px rgba(239,98,159,0.07);
   transition: background 0.2s, color 0.2s, border 0.2s;
@@ -38,7 +38,7 @@
 .story-tab-inner {
   max-width: 700px;
   margin: 0 auto;
-  padding: 2.2rem 0 2.2rem 0;
+  padding: 2.2rem 0.4rem 2.2rem 0.4rem;
 }
 /* Countdown Timer Styling */
 .countdown-timer {
