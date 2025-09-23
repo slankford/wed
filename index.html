@@ -15,15 +15,12 @@
   <div class="header-image-wrapper">
     <img src="res/header.png" alt="Floral Header Decoration" class="header-image" />
   </div>
-
   <!-- Hero Section -->
   <header class="hero">
     <h1>The Wedding of</h1>
     <h2><span class="no-line-break">Julianna Baum</span> & <span class="no-line-break">Silas Lankford</span></h2>
     <h3 class="date">November 22nd, 2025</h3>
-
   </header>
-
   <!-- Countdown Timer -->
   <div id="countdown" class="countdown-timer">
     <span class="countdown-label">Countdown to Wedding Day:</span><br>
@@ -32,80 +29,120 @@
     <span id="countdown-minutes" class="countdown-num">0</span> min
     <span id="countdown-seconds" class="countdown-num">0</span> sec
   </div>
+  <!-- Tab Navigation (now below countdown) -->
+  <div class="tab-nav" role="tablist" aria-label="Main sections">
+    <button class="tab-btn active" id="mainTabBtn" type="button" role="tab" aria-selected="true" aria-controls="mainTab">Details</button>
+    <button class="tab-btn" id="storyTabBtn" type="button" role="tab" aria-selected="false" aria-controls="storyTab">Our Story</button>
+  </div>
+  <!-- Tab Content -->
+  <div id="mainTab" class="tab-content" style="display:block;" role="tabpanel" aria-labelledby="mainTabBtn">
+    <center><a href="#RSVP" class="rsvp-link">Please RSVP by October 17th <span class="rsvp-arrow">→</span></a></center>
+    <!-- Schedule -->
+    <section class="schedule">
+      <h2>Tentative Schedule</h2>
+      <ul>
+        <li><strong>3:00 PM</strong> – Wedding Ceremony</li>
+        <li><strong>5:00 PM</strong> – Wedding Reception</li>
+        <li><strong>8:00 PM</strong> – Send Off</li>
+      </ul>
+    </section>
 
-  <center><a href="#RSVP" class="rsvp-link">Please RSVP by October 17th <span class="rsvp-arrow">→</span></a></center>
-  <!-- Schedule -->
-  <section class="schedule">
-    <h2>Tentative Schedule</h2>
-    <ul>
-      <li><strong>3:00 PM</strong> – Wedding Ceremony</li>
-      <li><strong>5:00 PM</strong> – Wedding Reception</li>
-      <li><strong>8:00 PM</strong> – Send Off</li>
-    </ul>
-  </section>
+    <!-- Venue -->
+    <section class="venue">
+      <h2>Where</h2>
+      <p><strong>Historic Stonebrook</strong></p>
+      <p>📍 475 Deep Run Rd, Perkasie, PA 18944</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3042.393624170013!2d-75.25812368460644!3d40.38623497936837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6a6e2e2e2e2e2%3A0x123456789abcdef!2s475%20Deep%20Run%20Rd%2C%20Perkasie%2C%20PA%2018944!5e0!3m2!1sen!2sus!4v1694280000000!5m2!1sen!2sus"
+        width="100%" height="300" style="border:0; border-radius:8px; margin-top:10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
 
-  <!-- Venue -->
-  <section class="venue">
-    <h2>Where</h2>
-    <p><strong>Historic Stonebrook</strong></p>
-    <p>📍 475 Deep Run Rd, Perkasie, PA 18944</p>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3042.393624170013!2d-75.25812368460644!3d40.38623497936837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6a6e2e2e2e2e2%3A0x123456789abcdef!2s475%20Deep%20Run%20Rd%2C%20Perkasie%2C%20PA%2018944!5e0!3m2!1sen!2sus!4v1694280000000!5m2!1sen!2sus"
-      width="100%" height="300" style="border:0; border-radius:8px; margin-top:10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </section>
+    <!-- Accommodations -->
+    <section class="accommodations">
+      <h2>Recommended Accommodations</h2>
+      <div class="hotel">
+        <h3>The Holiday Inn Lansdale</h3>
+        <p>30 min to venue • 45 min from airport</p>
+        <p>(267) 646-1005 • casey@holidayinnlansdale.com</p>
+        <a href="https://holidayinnlandsale.com" target="_blank">holidayinnlandsale.com</a>
+      </div>
+      <div class="hotel">
+        <h3>The Holiday Inn Quakertown</h3>
+        <p>27 min to venue • 52–58 min from airport</p>
+        <p>(215) 529-7979 • salesquakertown@wankawala.com</p>
+      </div>
+      <div class="hotel">
+        <h3>Springhill Suites Quakertown</h3>
+        <p>28 min to venue • 51–57 min from airport</p>
+        <p>PJ Schaefer • 215-529-6800 • pj.s@canonhm.com</p>
+      </div>
+    </section>
 
-  <!-- Accommodations -->
-  <section class="accommodations">
-    <h2>Recommended Accommodations</h2>
-    <div class="hotel">
-      <h3>The Holiday Inn Lansdale</h3>
-      <p>30 min to venue • 45 min from airport</p>
-      <p>(267) 646-1005 • casey@holidayinnlansdale.com</p>
-      <a href="https://holidayinnlandsale.com" target="_blank">holidayinnlandsale.com</a>
+    <!-- Gifts -->
+    <section class="gifts">
+      <h2>Registry</h2>
+      <p>Whoa there! 🤠 Your presence is present enough at our wedding. Truly, no other gift is needed.</p>
+      <p>But for those who have asked, you can donate to our honeymoon fund via Venmo:  
+        <a href="https://account.venmo.com/u/Silas-Lankford" class="venmo-link" target="_blank">
+          @Silas-Lankford
+        </a>
+        
+      </p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <h3>Can we bring our kiddos?</h3>
+      <p>We love your little ones! However, due to limited space, we kindly ask that children ages 3 to 12 do not attend, with the exception of bridal party children and our nieces and nephews.</p>
+
+      <h3>What about inclement weather?</h3>
+      <p>The wedding will be held indoors, so we’ll figure it out come rain, or shine (or snow!).</p>
+    </section>
+
+    <!-- RSVP Button -->
+    <section class="rsvp">
+    <h2 id="RSVP">RSVP - Please RSVP <span class="no-line-break">by October 17th</span></h2>
+    <iframe data-tally-src="https://tally.so/embed/mRAEy9?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0" title="RSVP"></iframe>
+    <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>  </section>
+  </div>
+
+  <!-- Our Story Tab -->
+  <div id="storyTab" class="tab-content" style="display:none;" role="tabpanel" aria-labelledby="storyTabBtn">
+    <div class="story-tab-inner">
+      <h1 class="our-story-heading" style="text-align:center;">Our Story</h1>
+      <div class="story-text">
+        <p>Our story began through family and faith. Julianna’s brother and sister-in-law, Joseph and Ashley, had just joined Jubilee Church in Woodstock, Georgia, where Silas had been a member for years. While Julianna was visiting from Pennsylvania over the 4th of July, they asked if she’d like to be set up with “a really cool guy” from their church, and she said yes. A few days later, Joseph mentioned the idea to Silas during an ultimate frisbee game, and soon after, Silas sent Julianna the first text on July 17th, 2024, the very day Julianna had been praying God would bring that text. From that moment, we began to see God’s hand guiding our steps. A month later, we met in person over family dinner, had our first date of Indian food and ping pong, and decided to continue our relationship long-distance, trusting God with the unknowns. What followed was many calls, visits, and holidays with each other’s families as our relationship grew deeper.</p>
+
+        <p>Exactly one year from that very first text, on July 17th, 2025, Silas asked Julianna to marry him, and she joyfully said yes! Our relationship has always been built on Jesus. We’ve discovered a shared love for God’s Word, His people, and His Kingdom, and we’ve seen His faithfulness in every step of our story. As we prepare for marriage, we’re not only celebrating the love God has given us for each other, but also rejoicing in the greater love it represents: the love of Christ for His Church.</p>
+     </div>
     </div>
-    <div class="hotel">
-      <h3>The Holiday Inn Quakertown</h3>
-      <p>27 min to venue • 52–58 min from airport</p>
-      <p>(215) 529-7979 • salesquakertown@wankawala.com</p>
-    </div>
-    <div class="hotel">
-      <h3>Springhill Suites Quakertown</h3>
-      <p>28 min to venue • 51–57 min from airport</p>
-      <p>PJ Schaefer • 215-529-6800 • pj.s@canonhm.com</p>
-    </div>
-  </section>
-
-  <!-- Gifts -->
-  <section class="gifts">
-    <h2>Registry</h2>
-    <p>Whoa there! 🤠 Your presence is present enough at our wedding. Truly, no other gift is needed.</p>
-    <p>But for those who have asked, you can donate to our honeymoon fund via Venmo:  
-      <a href="https://account.venmo.com/u/Silas-Lankford" class="venmo-link" target="_blank">
-        @Silas-Lankford
-      </a>
-      
-    </p>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq">
-    <h2>Frequently Asked Questions</h2>
-    <h3>Can we bring our kiddos?</h3>
-    <p>We love your little ones! However, due to limited space, we kindly ask that children ages 3 to 12 do not attend, with the exception of bridal party children and our nieces and nephews.</p>
-
-    <h3>What about inclement weather?</h3>
-    <p>The wedding will be held indoors, so we’ll figure it out come rain, or shine (or snow!).</p>
-  </section>
-
-  <!-- RSVP Button -->
-  <section class="rsvp">
-  <h2 id="RSVP">RSVP - Please RSVP <span class="no-line-break">by October 17th</span></h2>
-  <iframe data-tally-src="https://tally.so/embed/mRAEy9?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0" title="RSVP"></iframe>
-  <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>  </section>
+  </div>
 
   <footer>
     <p>Made with ❤️ by Julianna & Silas</p>
   </footer>
+
+  <script>
+    // Tab switching logic
+    const mainTabBtn = document.getElementById('mainTabBtn');
+    const storyTabBtn = document.getElementById('storyTabBtn');
+    const mainTab = document.getElementById('mainTab');
+    const storyTab = document.getElementById('storyTab');
+    mainTabBtn.addEventListener('click', () => {
+      mainTabBtn.classList.add('active');
+      storyTabBtn.classList.remove('active');
+      mainTab.style.display = 'block';
+      storyTab.style.display = 'none';
+    });
+    storyTabBtn.addEventListener('click', () => {
+      mainTabBtn.classList.remove('active');
+      storyTabBtn.classList.add('active');
+      mainTab.style.display = 'none';
+      storyTab.style.display = 'block';
+      // window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+  </script>
   <script>
     // Countdown Timer Script (copy-paste friendly)
     function updateCountdown() {

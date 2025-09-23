@@ -1,3 +1,45 @@
+/* Tab Navigation Styles (as buttons below countdown) */
+.tab-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin: 1.5rem 0 1.5rem 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+.tab-btn {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.13rem;
+  background: #f7ede7;
+  color: #cf5b63;
+  border: 2px solid #eecda3;
+  border-radius: 12px;
+  padding: 0.7em 2.2em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(239,98,159,0.07);
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  outline: none;
+  margin-bottom: 0;
+}
+.tab-btn.active, .tab-btn:hover, .tab-btn:focus {
+  background: linear-gradient(90deg, #eecda3 0%, #cf5b63 100%);
+  color: #fff;
+  border-color: #cf5b63;
+}
+.tab-content {
+  display: none;
+  animation: fadeInTab 0.3s;
+}
+@keyframes fadeInTab {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.story-tab-inner {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2.2rem 0 2.2rem 0;
+}
 /* Countdown Timer Styling */
 .countdown-timer {
   margin: 1.2rem auto 2.2rem auto;
